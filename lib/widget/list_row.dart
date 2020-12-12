@@ -1,9 +1,9 @@
+import 'package:bloc_jsonplaceholder_api/widget/txt.dart';
 import 'package:flutter/material.dart';
 
 import '../album.dart';
 
 class ListRow extends StatelessWidget {
-  //
   final Album album;
   ListRow({this.album});
 
@@ -15,11 +15,7 @@ class ListRow extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('${album.userId}'),
-          SizedBox(height: 10),
-          Text(album.title),
-        ],
-      ),
-    );
-  }
+          Txt(text: album.title),
+          SizedBox(height: 10),],
+      ),);}
 }
